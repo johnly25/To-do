@@ -1,0 +1,152 @@
+@font-face {
+
+    font-family: 'Inter';
+
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+
+    font-weight: 600;
+
+    font-style: normal;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.nav {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: #5CADFF;
+    height: 48px;
+}
+
+.logo {
+    font-size: 2rem;
+    margin: 0 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.sidebar {
+    background-color: #f7f8f7;
+}
+
+.sidebar ul,
+.projects ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.sidebar li,
+.projects li {
+    padding: 5% 10%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0px;
+}
+
+.sidebar li:hover, .projects li:hover {
+    background-color: #dedfde;
+}
+
+
+
+
+.button-container {
+    display: grid;
+    justify-content: end;
+    margin: 0 20%;
+}
+
+.add-btn {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    background: none;
+}
+
+.add-btn:active {
+    background: rgb(0 0 0 / 10%);
+}
+
+#add-task {
+    position: fixed;
+    left: 0%;
+    top: -60%;
+
+    border: none;
+    width: 500px;
+}
+
+.close-container {
+    display: grid;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+
+#add-task input[type=text] {
+    width: 100%;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.projects {
+    font-size: 1.2rem;
+
+}
+
+.sidebar span {
+    display: flex;
+    align-items: center;
+}
+
+.inbox {
+    font-size: 1.2rem;
+    padding: 1.2rem 15rem;
+    padding-bottom: 0;
+    font-weight:900;
+}
+
+ .todo-container {
+    display:grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    padding: 1.2rem 15rem;
+    padding-top: 1.2rem;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    gap: 1rem;
+    border-bottom: 1.5px solid #dedfde;
+    padding-bottom:  1.2rem;
+    align-items: center;
+}
+.task img {
+    height: 16px    ;
+}
