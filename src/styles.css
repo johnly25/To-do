@@ -65,7 +65,7 @@ body {
     gap: 0px;
 }
 
-.sidebar li:hover, .projects li:hover {
+.sidebar li:hover, .projects li:hover, .project-add-btn {
     background-color: #dedfde;
 }
 
@@ -89,7 +89,7 @@ body {
     background: rgb(0 0 0 / 10%);
 }
 
-#add-task {
+#add-task, #add-project {
     position: fixed;
     left: 0%;
     top: -60%;
@@ -104,7 +104,7 @@ body {
     padding-bottom: 20px;
 }
 
-#add-task input[type=text] {
+input[type=text] {
     width: 100%;
 }
 

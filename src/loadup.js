@@ -72,11 +72,13 @@ const loader = (function () {
         div2.classList.add("projects");
         let div3 = document.createElement("div");
         div3.classList.add("project-list");
+        let ul2 = document.createElement("ul");
+        ul2.classList.add("project-list-list");
         let ul = document.createElement("ul");
         let li = document.createElement("li");
         li.textContent = "+ Add Project";
         ul.append(li);
-        div3.append(ul);
+        div3.append(ul2, ul);
         div.append(div2, div3);
         sidebar.append(div);
     }
